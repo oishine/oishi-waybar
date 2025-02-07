@@ -1,0 +1,168 @@
+* {
+    font-family: "Iosevka Nerd Font";
+    font-weight: bold;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+window > box {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#window {
+    background-color: #202020;
+    border-radius: 4px;
+    padding: 8px 12px 8px 8px;
+    margin: 4px 0;
+}
+
+window#waybar.empty #window {
+    background: rgba(12, 12, 12, 0);
+}
+
+.modules-left {
+    padding: 3px;
+}
+
+.modules-right {
+    padding: 3px;
+}
+
+.modules-center {
+    padding: 3px;
+}
+
+#workspaces {
+    background-color: #202020;
+    border-radius: 4px;
+    padding: 4px 4px 4px 6px;
+    margin: 4px 0;
+}
+
+#workspaces button {
+    min-height: 0;
+    padding: 0 7px;
+    margin-right: 2px;
+    color: #f5e0dc;
+}
+
+#workspaces button.urgent {
+    color: #f5e0dc;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#workspaces button.empty {
+    color: #cdd6f4;
+}
+
+#workspaces button.visible {
+    color: #89dceb;
+}
+
+#workspaces button.active {
+    color: #fab387;
+}
+
+@keyframes blink {
+    to {
+        color: #202020;
+        background-color: #dcf5f3;
+    }
+}
+
+#custom-launcher {
+    background-color: #202020;
+    border-radius: 4px;
+    padding: 8px 8px 8px 4px;
+    margin: 4px 0;
+    color: #89dceb;
+}
+
+#custom-power {
+    background-color: #202020;
+    border-radius: 4px;
+    padding: 8px 12px 8px 8px;
+    margin: 4px 0;
+}
+
+#cpu {
+    background-color: #202020;
+    border-radius: 4px 4px 4px 4px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: #f2cdcd;
+}
+
+#memory {
+    background-color: #202020;
+    border-radius: 4px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: #fab387;
+}
+
+#wireplumber {
+    background-color: #202020;
+    border-radius: 4px;
+    padding: 8px 8px 8px 20px;
+    margin: 4px 0;
+    color: #f9e2af;
+}
+
+#wireplumber.muted {
+    color: #f38ba8;
+}
+
+#clock {
+    background-color: #202020;
+    border-radius: 4px 4px 4px 4px;
+    padding: 8px 10px 10px 10px;
+    margin: 4px 0;
+    color: #94e2d5;
+}
+
+#network {
+    background-color: #202020;
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px 0;
+}
+
+#network.disabled {
+    color: #f38ba8;
+}
+
+#tray {
+    background-color: #202020;
+    border-radius: 20px;
+    padding: 8px 12px 8px 12px;
+    margin: 4px 0;
+}
+
+#battery {
+    background-color: #202020;
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px 0;
+}
+
+#backlight {
+    background-color: #202020;
+    color: #cdd6f4;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px 0;
+}
